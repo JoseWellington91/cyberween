@@ -1,0 +1,9 @@
+CYBERWEEN — VERSÃO LEVE PARA GITHUB PAGES
+
+Esta versão é HTML/CSS/JavaScript puro e não usa Godot, WASM ou PCK.
+Todos os arquivos individuais têm menos de 20 MB.
+
+Envie o conteúdo desta pasta para a raiz do seu repositório GitHub Pages.
+O arquivo index.html deve ficar na raiz. Não envie apenas o ZIP: extraia antes.
+
+O jogo possui 30 perguntas, sorteia 5 por rodada, mostra explicações e usa animações distintas para acerto e erro.

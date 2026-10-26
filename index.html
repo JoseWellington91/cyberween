@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cyberween: quiz educativo de conscientização em cibersegurança para estudantes do ensino médio.">
+  <title>Cyberween: Caça às Ameaças</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="eyebrow">CYBERSEGURANÇA • HALLOWEEN</span><strong>CYBERWEEN</strong></div>
+      <div class="stats" aria-live="polite"><span id="phaseBadge" class="pill teal">TELA INICIAL</span><span id="progressBadge" class="pill amber">5 PERGUNTAS</span><span id="scoreBadge" class="pill">PONTOS 0</span></div>
+    </header>
+
+    <section id="startScreen" class="screen start-screen" aria-labelledby="startTitle">
+      <div class="start-copy">
+        <p class="kicker">UMA RODADA. CINCO DESAFIOS. UMA DEFESA MAIS FORTE.</p>
+        <h1 id="startTitle">Caça às<br>Ameaças</h1>
+        <p class="lead">Teste seus instintos digitais com perguntas sobre senhas, golpes, privacidade e segurança no dia a dia.</p>
+        <ul class="feature-list"><li>30 questões cadastradas</li><li>5 perguntas sorteadas a cada rodada</li><li>Explicação educativa após cada resposta</li></ul>
+        <button id="startButton" class="primary-button" type="button">COMEÇAR A RODADA</button>
+        <p class="hint">Dica: leia a explicação mesmo quando acertar.</p>
+      </div>
+      <img class="mascots start-mascots" src="assets/cyberween-mascots.png" alt="Fantasma simpático e abóbora com escudo digital">
+    </section>
+
+    <section id="quizScreen" class="screen quiz-screen hidden" aria-labelledby="questionText">
+      <div class="quiz-layout">
+        <div class="quiz-main">
+          <div class="question-meta"><span id="questionNumber">QUESTÃO 1 DE 5</span><span id="topicBadge" class="pill amber">TEMA</span></div>
+          <article class="question-card"><h2 id="questionText">Pergunta</h2></article>
+          <div id="options" class="options" role="group" aria-label="Alternativas"></div>
+          <section id="feedback" class="feedback hidden" aria-live="polite">
+            <img id="feedbackImage" src="assets/cyberween-celebration.png" alt="">
+            <div><h3 id="feedbackTitle">Resultado</h3><p id="feedbackExplanation">Explicação</p><button id="nextButton" class="secondary-button" type="button">PRÓXIMA PERGUNTA</button></div>
+          </section>
+        </div>
+        <img class="mascots quiz-mascots" src="assets/cyberween-mascots.png" alt="Mascotes digitais de Halloween">
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen result-screen hidden" aria-labelledby="resultTitle">
+      <img id="resultImage" class="result-image" src="assets/cyberween-celebration.png" alt="Celebração de Halloween digital">
+      <p class="kicker">RODADA CONCLUÍDA</p><h2 id="resultTitle">Boa caçada!</h2><div id="resultScore" class="result-score">0/5</div><p id="resultMessage" class="result-message"></p>
+      <button id="replayButton" class="primary-button" type="button">JOGAR NOVA RODADA</button>
+      <p class="hint">Cada rodada sorteia cinco desafios diferentes do banco de 30.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
